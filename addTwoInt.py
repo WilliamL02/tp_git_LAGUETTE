@@ -4,6 +4,9 @@ import sys
 
 print(sys.argv)
 
+a = int( sys.argv[1] )
+b = int( sys.argv[2] )
+
 
 def add(a,b):
     x = a + b
@@ -19,10 +22,6 @@ except IndexError:
     b = int(input("Entrez la dexieme valeur : "))
     add(a,b)
     raise (SystemExit)
-    
-
-a = int( sys.argv[1] )
-b = int( sys.argv[2] )
 
 add(a,b)
 
